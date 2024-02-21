@@ -7,7 +7,57 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	h2 style="padding: 5px  0  0 100px;">Signup Form Car</h2>
+
+<form action="#" method="post">
+  <div style="padding: 5px  0  0 100px;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Name">
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Email">
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <label>Gender:</label><br>
+    <input type="radio" id="gender_m" name="gender" value="male" required>
+    <label for="gender_m">Male</label>
+    <input type="radio" id="gender_f" name="gender" value="female" required>
+    <label for="gender_f">Female</label>
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <label for="cars">Car Brands:</label>
+    <select id="cars" name="cars" required>
+      <option value="" disabled selected>--Please choose an option--</option>
+      <option value="audi">Audi</option>
+      <option value="bmw">BMW</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="toyota">Toyota</option>
+      <option value="honda">Honda</option>
+    </select>
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required placeholder="Age">
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <label for="dob">DOB:</label>
+    <input type="date" id="dob" name="dob" required>
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <label for="tel">Phone Number:</label>
+    <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Password">
+  </div>
+  <div style="padding: 5px  0  0 100px;">
+    <input type="checkbox" id="tos" name="tos" required>
+    <label for="tos">I agree to the TOS</label>
+  </div>
+  <button type="submit" style="margin:  5px  0  0 100px;">Signup</button>
+</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
